@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="banniere"><img class="image" src="banniere.jpeg" alt="ciel étoiles"></div>
@@ -20,6 +22,22 @@
             </ul>
         </nav>
     </header>
+    <section>
+        <form action="mapage.php" method="post"></form>
+        <fieldset>
+            <legend>Contact</legend>
+
+            <div><label for="Nom">Nom:*</label><input type="text" name="Nom" id="Nom" placeholder="Ex: Robert"></div>
+            <br>
+
+            <div><label for="email">E-mail:*</label><input type="email" name="email" id="email"
+                    placeholder="Ex: monMai@FAI.com"></div><br>
+            <label for="commentaire">Laisser un commentaire:</label>
+            <div><textarea name="commentaire" id="commentaire" cols="80" rows="10"></textarea></div>
+            <div></div>
+            <div></div>
+        </fieldset>
+    </section>
     <footer>
         <ul class="footer">
             <li><a href="#">page 2</a></li>
@@ -28,6 +46,7 @@
             <li><a href="#">page 5</a></li>
         </ul>
     </footer>
-    
+
 </body>
+
 </html>

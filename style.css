@@ -1,5 +1,5 @@
 body {
-    background-color: lightgray;
+    background: radial-gradient(circle at top,#CCDAE0,#EDF2F4);
     filter: saturate(80%);
     
 }
@@ -22,12 +22,14 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid grey;
+    border: 2px solid #8D99AE;
 }
 h1 {
-    color: red;
+    color: #EF233C;
     font-size: xx-large;
     text-align: center;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .navbarre {
     text-align: center;
@@ -36,14 +38,9 @@ h1 {
 li {
     list-style-type: none;
 }
-
-li:hover {
-    color: red;
-    text-decoration: underline;
-    
-    
-}
-H3 {
+h3 {
+    color: #2B2D42;
+    font-weight: bold;
     text-decoration: underline dashed 1px;
 }
 article {
@@ -56,4 +53,13 @@ article {
     position: absolute;
     right: 20px;
     padding-bottom: 20px;
+}
+li a:visited {
+    color: grey;
+}
+li a:link {
+    color:#D90429 ;
+}
+li a:hover {
+    color: #2B2D42;
 }
