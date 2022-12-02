@@ -15,10 +15,10 @@
         <h1>Bienvenue sur mon site !</h1>
         <nav class="nav">
             <ul class="navbarre">
-                <li><a>Accueil</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Galerie</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -27,15 +27,30 @@
         <fieldset>
             <legend>Contact</legend>
 
-            <div><label for="Nom">Nom:*</label><input type="text" name="Nom" id="Nom" placeholder="Ex: Robert"></div>
+            <div>
+                <label for="Nom">Nom:<span>*</span></label>
+                <input type="text" name="Nom" id="Nom"
+                    placeholder="Ex: Robert">
+            </div>
             <br>
 
-            <div><label for="email">E-mail:*</label><input type="email" name="email" id="email"
-                    placeholder="Ex: monMai@FAI.com"></div><br>
-            <label for="commentaire">Laisser un commentaire:</label>
-            <div><textarea name="commentaire" id="commentaire" cols="80" rows="10"></textarea></div>
-            <div></div>
-            <div></div>
+            <div>
+                <label for="email">E-mail:<span>*</span></label>
+                <input type="email" name="email" id="email"
+                    placeholder="Ex: monMai@FAI.com">
+            </div><br>
+                <label for="commentaire">Laisser un commentaire:</label>
+            <div>
+                <textarea name="commentaire" id="commentaire" cols="70" rows="10" placeholder="Je depose mon avis :)"></textarea>
+            </div>
+            <div>
+                <label for="envoi">Envoyer une copie par E-mail !</label>
+                <input type="checkbox" name="envoi" id="envoi" checked>
+            </div>
+            <div>
+                <input class="submit" type="button" value="envoyer">
+                <input type="button" value="reset">
+            </div>
         </fieldset>
     </section>
     <footer>
